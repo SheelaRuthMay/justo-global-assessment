@@ -1,0 +1,93 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+body{
+  background: linear-gradient(135deg, #1B8AF1, #B58DED);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+h4{
+  font-family: 'Segoe UI', bold;
+  font-size: 35px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+form{
+  display: inline-block;
+  align-items: center;
+  height: 270px;
+  width: 350px;
+  margin-bottom: 170px;
+}
+.text_area{
+  align-content: center;
+  border-radius: 22px;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 64px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text_input, .text_input:focus, .text_input:active{
+  font-family: 'Montserrat regular';
+  font-size: 20px;
+  border: none !important;
+  width: 80%;
+  outline-width: 0;
+}
+
+.btn{
+  margin-top: 28px;
+  width: 165px;
+  height: 60px;
+  border-radius: 30px;
+  background: #B58DED;
+  border: none;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(181, 141, 237, 0.7), 0 6px 20px 0 rgba(181, 141, 237, 0.9);
+  cursor: pointer;
+}
+
+.login{
+  display: inline-block;
+  background: #FFFFFF;
+  width: 500px;
+  height: 500px;
+  margin-top: 2%;
+  border-radius: 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.error{
+  color: #ef0303;
+}
+
+.dashboard .text_input{
+  padding: 20px !important;
+  width: 500px !important;
+  border-radius: 10px;
+}
+.dashboard .btn{
+  margin-left: 10px;
+}
+
+.dashboard form{
+  width: 500px;
+}
