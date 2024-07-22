@@ -1,3 +1,6 @@
+TECH STACK USED : 
+ReactJs, NodeJs, Sequelize ORM/PostgreSQL
+
 HOW TO RUN :
 
 Root Folder -> npm i
