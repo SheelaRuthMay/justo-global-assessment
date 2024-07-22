@@ -51,6 +51,8 @@ const LoginForm = () => {
                     <input
                         type="password"
                         required
+                        min={5}
+                        max={10}
                         id="password"
                         name="password"
                         placeholder="password"
