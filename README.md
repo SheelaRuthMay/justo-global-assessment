@@ -1,7 +1,9 @@
 HOW TO RUN :
 
 Root Folder -> npm i
+
 client -> npm i
+
 server -> npm i
 
 USE COMMAND IN THE ROOT FOLDER : npm run dev
