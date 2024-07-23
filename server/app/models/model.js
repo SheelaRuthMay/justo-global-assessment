@@ -13,6 +13,12 @@ module.exports = (sequelize, Sequelize) => {
         },
         loginAttempt: {
           type: Sequelize.INTEGER,
+        },
+        kickedOut: {
+          type: Sequelize.BOOLEAN,
+        },
+        role_id: {
+          type: Sequelize.INTEGER,
         }
       },
       {
@@ -47,11 +53,34 @@ module.exports = (sequelize, Sequelize) => {
         freezeTableName: true, 
       }
     );
+
+    const rolesTable = sequelize.define(
+      "roles",
+      {
+        role_id: {
+          type: Sequelize.INTEGER,
+          autoIncrement: true,
+          primaryKey: true
+        },
+      role: {
+          type: Sequelize.STRING,
+        }
+      },
+      {
+        createdAt: false, 
+        updatedAt: false, 
+        freezeTableName: true, 
+      }
+    );
+
+    rolesTable.hasMany(usersTable, { foreignKey: 'role_id' })
+    usersTable.belongsTo(rolesTable, { foreignKey: 'role_id' })
   
     // export
     const allTables = {
       usersTable: usersTable,
-      linksTable: linksTable
+      linksTable: linksTable,
+      rolesTable: rolesTable
     };
   
     return allTables;

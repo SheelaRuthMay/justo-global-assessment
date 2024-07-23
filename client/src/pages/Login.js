@@ -8,6 +8,7 @@ function Login() {
     useEffect(() => {
         localStorage.removeItem("isAuthenticated")
         localStorage.removeItem("token")
+        localStorage.removeItem("role")
         fetch(`${basePath}/insertOnce`)
     }, [])
     return (

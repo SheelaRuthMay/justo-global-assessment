@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Redirect, Route, Router, Navigate } from "react-
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import OneTimeLink from './pages/OneTimeLink';
-import { PrivateRoutes, PublicRoutes } from "./utils/common";
+import { PrivateRoutes, PublicRoutes, AdminRoutes } from "./utils/common";
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,12 @@ function App() {
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/oneTimeLink/:token" element={<OneTimeLink />} />
       </Route>
+
+      {/* <Route element={<AdminRoutes />}>
+        <Route path='*' element={<Navigate to="/" />}/>
+        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/oneTimeLink/:token" element={<OneTimeLink />} />
+      </Route> */}
 
     </Routes>
     </div>

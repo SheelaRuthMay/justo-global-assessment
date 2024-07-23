@@ -13,28 +13,29 @@ code {
 } */
 
 
-body{
+body {
   background: linear-gradient(135deg, #1B8AF1, #B58DED);
   height: 100vh;
   width: 100%;
   text-align: center;
 }
 
-h4{
+h4 {
   font-family: 'Segoe UI', bold;
   font-size: 35px;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
-form{
+form {
   display: inline-block;
   align-items: center;
   height: 270px;
   width: 350px;
   margin-bottom: 170px;
 }
-.text_area{
+
+.text_area {
   align-content: center;
   border-radius: 22px;
   margin-bottom: 35px;
@@ -43,7 +44,9 @@ form{
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.text_input, .text_input:focus, .text_input:active{
+.text_input,
+.text_input:focus,
+.text_input:active {
   font-family: 'Montserrat regular';
   font-size: 20px;
   border: none !important;
@@ -51,7 +54,7 @@ form{
   outline-width: 0;
 }
 
-.btn{
+.btn {
   margin-top: 28px;
   width: 165px;
   height: 60px;
@@ -65,7 +68,7 @@ form{
   cursor: pointer;
 }
 
-.login{
+.login {
   display: inline-block;
   background: #FFFFFF;
   width: 500px;
@@ -75,19 +78,37 @@ form{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.error{
+.error {
   color: #ef0303;
 }
 
-.dashboard .text_input{
+.dashboard .text_input {
   padding: 20px !important;
   width: 500px !important;
   border-radius: 10px;
 }
-.dashboard .btn{
+
+.dashboard .btn {
   margin-left: 10px;
 }
 
-.dashboard form{
+.dashboard form {
   width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 10px 10%;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.oneTimeLink {
+  margin-top: 100px;
 }

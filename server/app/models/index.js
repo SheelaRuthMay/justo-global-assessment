@@ -55,4 +55,5 @@ db.sequelize = sequelize;
 
 db.usersTable = require("./model.js")(sequelize, Sequelize);
 db.linksTable = require("./model.js")(sequelize, Sequelize);
+db.rolesTable = require("./model.js")(sequelize, Sequelize);
 module.exports = db;

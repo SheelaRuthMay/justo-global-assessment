@@ -18,6 +18,7 @@ const LoginForm = () => {
             .then((response) => {
                 if (response.status) {
                     localStorage.setItem("isAuthenticated", true)
+                    localStorage.setItem("role", response.message.role)
                     localStorage.setItem("token", response.message.accessToken)
                     history(`/dashboard`);
                 }

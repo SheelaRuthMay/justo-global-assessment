@@ -5,6 +5,7 @@ const secretKey = 'vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3';
 const iv = crypto.randomBytes(16);
 const ACCESS_TOKEN_SECRET = "13ccdb4260cef6c73ab96a1594a6f1cfbe27a41e108bcbca6c629bcfc9112b98"
 const maxLoginAttempts = 5;
+const linkValidFor = 3;
 
 const encrypt = (text) => {
 
@@ -31,5 +32,6 @@ module.exports = {
     decrypt,
     encrypt,
     ACCESS_TOKEN_SECRET,
-    maxLoginAttempts
+    maxLoginAttempts,
+    linkValidFor
 };
