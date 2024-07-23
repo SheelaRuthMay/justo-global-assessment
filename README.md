@@ -14,10 +14,15 @@ USE COMMAND IN THE ROOT FOLDER : npm run dev
 Need to create database in PgAdmin - (DB name : justo_assessment). Tables will be created automatically based on schema.
 
 Users and Admin Login Entries will be automatically inserted for the first time. 
+
 ADMIN - Username : justo / Password : 12345
+
 USER - Username : user1 / Password : 12345
+
 USER - Username : user2 / Password : 12345
+
 USER - Username : user3 / Password : 12345
+
 USER - Username : user4 / Password : 12345
 
 
